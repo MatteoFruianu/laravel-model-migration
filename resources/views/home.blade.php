@@ -12,6 +12,10 @@
                 <h3>{{ $car->modello }}</h3>
                 <div class="brand">{{ $car->marca }}</div>
                 <div class="plate">{{ $car->targa }}</div>
+                 @if (!$loop->last)
+                 <hr>  
+                 @endif
+                
             </li>
         @endforeach
     </p>
