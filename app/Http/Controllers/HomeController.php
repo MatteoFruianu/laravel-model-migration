@@ -14,10 +14,7 @@ class HomeController extends Controller
         // GET DATA FROM DB
         // $cars = Car::all();
 
-        $cars = Car::where('marca', '!=', 'Ford' )
-            ->orderBy('modello', 'desc')
-            ->limit(2)
-            ->get();
+        $cars = Car::all();
             
        
         return view('home', compact('cars'));
